@@ -1,6 +1,7 @@
 import React from "react";
 import EmptyCart from "../assets/empty_cart.svg";
 import { Link } from "react-router-dom/cjs/react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Cart = ({ cart, changeQuantity, removeItem }) => {
   const subtotal = cart.reduce((total, item) => {
@@ -13,7 +14,12 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
         <div className="books__container">
           <div className="row">
             <div className="book__selected--top">
-              <h2 className="book__selected--title--top">Your Cart</h2>
+              <Link to="/books" className="book__link">
+                <FontAwesomeIcon icon="arrow-left" />
+              </Link>
+              <Link to="/books" className="book__link">
+                <h2 className="book__selected--title--top">Books</h2>
+              </Link>
             </div>
             <div className="cart">
               <div className="cart__header">
