@@ -17,15 +17,15 @@ const Footer = () => {
             <Link to="/" className="footer__link">
               Home
             </Link>
-            <a href="/#features" className="footer__link">
+            <Link to="/#features" className="footer__link">
               Features
-            </a>
-            <a href="/#explore" className="footer__link">
+            </Link>
+            <Link to="/#explore" className="footer__link">
               Explore
-            </a>
-            <a href="/#cart" className="footer__link">
+            </Link>
+            <Link to="/cart" className="footer__link">
               Cart
-            </a >
+            </Link>
           </div>
           <div className="footer__copyright">
             Copyright &copy; 2024 Library Inc.
